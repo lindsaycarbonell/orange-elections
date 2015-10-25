@@ -1,49 +1,167 @@
-/*@font-face {
-    font-family: QuattrocentoSans-Regular;
-    src: url(../fonts/QuattrocentoSans-Regular.ttf);
+/*COLORS:
+
+
+dark purple: #3F3E67
+light purple: #8D8BE7
+blue: #4B47EB
+dark blue/purple: #211F67
+purple: #6E6DB4
+
+
+
+
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400);
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../fonts/Gotham-Light.otf);
 }
 @font-face {
-    font-family: QuattrocentoSans-Italic;
-    src: url(../fonts/QuattrocentoSans-Italic.ttf);
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Medium.otf);
 }
 @font-face {
-    font-family: QuattrocentoSans-BoldItalic;
-    src: url(../fonts/QuattrocentoSans-BoldItalic.ttf);
+    font-family: Knockout;
+    src: url(../fonts/Knockout.otf);
 }
-@font-face {
-    font-family: QuattrocentoSans-Bold;
-    src: url(../fonts/QuattrocentoSans-Bold.ttf);
+
+/*DOM elements*/
+body{
+  padding-top:70px; /*to prevent fixed menu from covering content*/
+  font-family:'Georgia', 'serif';
+  line-height:29px;
+  font-size:16px;
+}
+body:hover{
+  cursor:default;
+}
+
+h1, h2, h3, h4, h5{
+  font-family:'Gotham-Medium', 'Montserrat-Bold', 'sans-serif';
+}
+
+h4{
+  vertical-align: top;
+}
+
+p{
+font-family:'Georgia', 'serif';
+}
+hr{
+  margin-top:0;
+}
+
+/*main*/
+
+/*.max-width{
+  max-width:850px;
 }*/
 
-@import url(http://fonts.googleapis.com/css?family=Amiri:400italic,700italic,400,700);
-
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-
-@import url(http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica);
-
-body{
-  /*background-color:#86665E;*/
-}
-h1, h2, h3, h4, h5{
-  font-family:Oswald;
-}
-
-iframe{
-  border:0;
-}
-
 #site-title{
-  text-align:left;
-  font-family:IM Fell DW Pica;
-  /*font-weight:400;*/
-  font-size:40pt;
-  letter-spacing:1pt;
-  verical-align:bottom;
-
+  font-size:50px;
+  text-align:center;
 }
+
+.menu-bar{
+  background-color:#4B47EB;
+  color:white;
+  height:100%;
+  text-align: center;
+}
+
+/*people*/
+
+#people{
+  margin-left:10px;
+}
+
+.m-picwid, .t-picwid{
+  height:120px;
+  width:auto;
+  vertical-align: top;
+}
+
+.m-name, .t-name{
+  margin-top:5px;
+}
+
+/*issues*/
+
+#issues{
+  padding:0;
+  border-radius:0;
+}
+#issue1, #issue2, #issue3, #issue4{
+  height:70px;
+  width:100vw;
+  padding:20px;
+  color:black;
+  font-size:14pt;
+  margin:0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity:.6;
+}
+
+#issue1{
+  background-image:url('../assets/light-rail.jpg');
+}
+
+#issue2{
+  background-image:url('../assets/obeycreek.jpg');
+}
+
+#issue3{
+  background-image:url('../assets/amity-station.jpeg');
+}
+
+#issue4{
+  background-image:url('../assets/ephesus-fordham.jpg');
+}
+
+/*ACCORDION MODS*/
+
+#accordion1, #accordion2, #accordion3{
+  /*max-width:200px;
+  padding-left:20px;*/
+  width:100%;
+}
+.ui-accordion-content{
+  padding:10px;
+  margin-bottom:10px;
+  height:50%;
+}
+.ui-accordion-header{
+  /*padding-left:15px;*/
+  text-align:center;
+}
+.ui-accordion-header:hover, .ui-state-focus, .ui-state-active{
+  background-color: #3F3E67;
+  color:white!important;
+}
+.ui-corner-all{
+  border-radius:0px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  color:#3F3E67;
+  font-family:'Gotham-Medium', 'Montserrat-Bold', 'sans-serif';
+  font-size:11.5pt;
+  padding:2px;
+  font-weight:normal;
+  border:1px solid #8D8BE7;
+}
+.ui-widget-content{
+  background:none;
+  font-size:10pt;
+}
+
 
 /*twitter api*/
-#twitter-box{
+.twitter-box{
   background-color:#99badd;
   border:1px solid #99badd;
   max-width:200px;
@@ -51,25 +169,25 @@ iframe{
   overflow:hidden;
 }
 @media (max-width:760px){
-  #twitter-box{
+  .twitter-box{
     max-width:760px;
     margin-left:30px;
     margin-right:30px;
     margin-bottom:10px;
   }
-  #twit-tweet{
+  .twit-tweet{
     font-size:15pt;
   }
 
 }
-#twitter-title{
+.twitter-title{
   text-align:left;
   color:black;
   text-decoration:none;
   font-family:Oswald;
   font-size:15pt;
 }
-#twitter-title:hover{
+.twitter-title:hover{
   color:#86665E;
   font-size:17pt;
   text-decoration:underline;
@@ -105,7 +223,6 @@ iframe{
 }
 }
 
-
 .insta-img{
 	margin:20px 30px 20px 0px;
 	border:2px solid #99badd;
@@ -117,7 +234,6 @@ iframe{
     margin-left:30%;
   }
 }
-
 
 #insta-follow{
   text-align:left;
@@ -134,17 +250,6 @@ iframe{
   text-decoration:underline;
 }
 
-
-body{
-  font-family:Amiri;
-}
-
-h1{
-  font-family:Amiri;
-  font-weight:700;
-  text-align:center;
-  vertical-align:text-bottom;
-}
 #hash-title{
   font-family:Amiri;
   font-weight:700;
@@ -152,6 +257,8 @@ h1{
   padding-left:15px;
   vertical-align:text-bottom;
 }
+
+/*standard styles*/
 
 .inline{
   display:inline;
@@ -162,9 +269,80 @@ h1{
 .inline-block{
   display:inline-block;
 }
-
+/*.tab{
+  margin-left:20px;
+}*/
+.zero-pad-left{
+  padding-left:0px;
+}
 .margins-top{
   margin-top:10%;
+}
+
+
+/*media queries*/
+@media (max-width:760px){
+body{
+  padding-top:40vw;
+}
+#people{
+  margin-left:15px;
+}
+.menu-bar{
+  padding:1px;
+  border-top:1px solid white;
+}
+.ui-accordion-header, .ui-accordion-content{
+  width:90vw;
+  border-radius:0px;
+}
+}
+
+@media (min-width:992px){
+  .m-name, .m-party, .m-age, .t-name, .t-party, .t-age, .t-name{
+    margin-left:25px;
+  }
+}
+
+@media (min-width:405px) and (max-width:760px){
+  .m-picwid{
+    height:250px;
+  }
+  .m-name, .m-party, .m-age{
+    margin-left:90px;
+  }
+}
+
+@media (min-width:500px) and (max-width:800px){
+  /*.m-picwid{
+    height:150px;
+  }*/
+  .m-name, .m-party, .m-age{
+    margin-left:30px;
+  }
+}
+
+@media (min-width:815px) and (max-width:986px){
+  /*.m-picwid{
+    height:300px;
+  }*/
+  .m-name, .m-party, .m-age{
+    margin-left:25px;
+  }
+}
+
+@media (min-width:575px) and (max-width:760px){
+  .t-picwid{
+    height:200px;
+  }
+  .t-name, .t-party, .t-age{
+    margin-left:10px;
+  }
+}
+@media (min-width:770px) and (max-width:992px){
+  .t-name, .t-party, .t-age{
+    margin-left:25px;
+  }
 }
 
 
