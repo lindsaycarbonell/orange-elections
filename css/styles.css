@@ -159,6 +159,27 @@ hr{
   font-size:10pt;
 }
 
+.accord-council > div{
+  padding-top:20px;
+  margin:3px;
+}
+@media (max-width:555px){
+  .accord-council > div{
+    max-width:80vw;
+  }
+}
+@media (min-width:1300px){
+  .accord-council > div{
+    max-width:25vw;
+  }
+
+}
+
+/*data table*/
+.dataTables_paginate, .dataTables_info, .dataTables_length, .dataTables_filter{
+  display:none;
+}
+
 
 /*twitter api*/
 .twitter-box{

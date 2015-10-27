@@ -2,8 +2,14 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/jquery-ui.theme.css" rel="stylesheet"/>
 <link href="css/styles.css" rel="stylesheet"/>
+<link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" rel="stylesheet"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
 <script src="js/jquery-ui.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
 <script src="js/jquery.smooth-scroll.js"></script>
 <script src="js/tweetLinkIt.js"></script>
 <script src="js/accordions.js"></script>
@@ -275,8 +281,7 @@
 <!-- TC ROW1 -->
 
 <div class="row" id="prow2">
-  <div id="accord" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
+  <div id="accordion4" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/anderson.jpg" /><!--from indy week-->
@@ -291,7 +296,7 @@
 
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion5" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/bell.jpg" /><!--from indy week-->
@@ -302,11 +307,11 @@
         <h4 class="t-party">Democrat</h4>
         <h4 class="t-age">Age: <span>44</span></h4>
       </div>
-
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion6" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/ward.jpg" /><!--from town of chapel hill-->
@@ -319,13 +324,14 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 </div><!--/#prow2-->
 
 <!-- TC ROW2 -->
 
 <div class="row" id="prow3">
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion7" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/schwartz.jpg" /><!--from N&O-->
@@ -338,9 +344,10 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion8" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/oates.jpg" /><!--from nancyoates.org-->
@@ -353,9 +360,10 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion9" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/parker.jpg" /><!--from indy week-->
@@ -368,13 +376,14 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 </div><!--/#prow3-->
 
 <!-- TC ROW3 -->
 
 <div class="row" id="prow4">
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion10" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/jones.jpg" /><!--from indy week-->
@@ -387,9 +396,10 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion11" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/storrow.jpg" /><!--from N&O-->
@@ -402,9 +412,10 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+  <div id="accordion12" class="accord-council col-lg-4 col-md-4 col-sm-4 col-xs-12">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img class="thumbnail t-picwid" src="assets/neebe.jpg" /><!--from N&O-->
@@ -417,9 +428,72 @@
       </div>
 
     </div><!--/inner row 1-->
+    <div><p>content</p></div>
   </div>
 </div><!--/#prow4-->
 
+<hr style="margin-top:40px;">
+
+<div class="row" id="prow5">
+  <div class="col-lg-12 col-sm-12">
+    <div id="funds-graph" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  </div>
+  <div class="col-lg-12 col-sm-12">
+    <table id="funds-table" class="display" cellspacing="0" width="100%">
+      <thead>
+            <tr>
+                <th>Name</th>
+                <th>Funds collected since Oct 22, 2015</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Funds collected since Oct 22, 2015</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>Jessica Anderson</td>
+                <td>$4,552</td>
+            </tr>
+            <tr>
+                <td>Nancy Oates</td>
+                <td>$8,442.01</td>
+            </tr>
+            <tr>
+                <td>Michael Parker</td>
+                <td>$6,761</td>
+            </tr>
+            <tr>
+                <td>Adam W. Jones</td>
+                <td>$2,800</td>
+            </tr>
+            <tr>
+                <td>Lee Storrow</td>
+                <td>$20,761</td>
+            </tr>
+            <tr>
+                <td>Paul Neebe</td>
+                <td>$305</td>
+            </tr>
+            <tr>
+                <td>Donna Bell</td>
+                <td>$3,127.04</td>
+            </tr>
+            <tr>
+                <td>Jim Ward</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>David Schwartz</td>
+                <td>$5,163</td>
+            </tr>
+    </table>
+  </div>
+</div><!--/#prow5-->
 
 </div><!--/#people-->
 
@@ -504,8 +578,8 @@
 <hr>
 
 <div class="container-fluid max-width" id="vote">
-  <div class="col-lg-6 col-md-6 col-sm-12" id="map">
-    <p>map</p>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <!-- <div id="map-canvas"></div> -->
   </div>
 
   <div class="col-lg-6 col-md-6 col-sm-12" id="hours">
@@ -514,7 +588,84 @@
 
 </div><!--/#vote-->
 
+<!-- <script type="text/javascript" src="js/mapper.js"></script> -->
+<!-- <script>
+var map;
+function initMap() {
+  console.log("init map c");
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}</script> -->
 <script>
 $('a').smoothScroll();
+$(document).ready(function() {
+    $('#funds-table').DataTable();
+} );
+ //initMap();
 </script>
+
+<script>
+$(function () {
+    $('#funds-graph').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Campaign Funds Collected as of Oct 22, 2015'
+        },
+        subtitle: {
+            text: 'Source: The Daily Tar Heel'
+        },
+        xAxis: {
+            categories: [
+                'Jessica Anderson',
+                'Nancy Oates',
+                'Michael Parker',
+                'Adam W. Jones',
+                'Lee Storrow',
+                'Paul Neebe',
+                'Donna Bell',
+                'Jim Ward',
+                'David Schwartz'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            //pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                //'<td style="padding:0"><b>$ {point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        lang: {
+        thousandsSep: ','
+    	},
+      legend:{
+        enabled:false
+      },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Funds Collected ($)',
+            data: [4552, 5442.01, 6761, 2800, 20721, 305, 3127.04, 5, 5163]
+
+        }
+                ]
+    });
+});
+</script>
+
+
+<!-- <script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHKEDRvjhVBj_B2twA9NrX9pS61PmijNs&callback=initMap" async defer></script> -->
 </body>
