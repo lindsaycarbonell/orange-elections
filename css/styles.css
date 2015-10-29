@@ -44,9 +44,10 @@ h1, h2, h3, h4, h5{
 
 h4{
   vertical-align: top;
+  text-align:left;
 }
 
-p{
+p, li{
 font-family:'Georgia', 'serif';
 }
 hr{
@@ -83,9 +84,24 @@ hr{
   vertical-align: top;
 }
 
-.m-name, .t-name{
+.m-name, .t-title{
   margin-top:5px;
 }
+
+.m-name{
+  font-size:24px;
+}
+
+.question{
+  font-weight:bold;
+}
+.m-questions{
+  margin:0 60px 0 20px;
+}
+.t-drop-title{
+  font-family:'Gotham-Medium', 'Montserrat-Bold', 'sans-serif';
+}
+
 
 /*issues*/
 
@@ -126,14 +142,12 @@ hr{
 /*ACCORDION MODS*/
 
 #accordion1, #accordion2, #accordion3{
-  /*max-width:200px;
-  padding-left:20px;*/
-  width:100%;
+  margin:0 60px 0 20px;
 }
 .ui-accordion-content{
   padding:10px;
   margin-bottom:10px;
-  height:50%;
+  /*height:inherit;*/
 }
 .ui-accordion-header{
   /*padding-left:15px;*/
@@ -175,42 +189,39 @@ hr{
 
 }
 
+/*font awesome*/
+i.fa.fa-thumbs-up{
+    color: green;
+}
+i.fa.fa-thumbs-down{
+    color:red;
+}
+
 /*data table*/
-.dataTables_paginate, .dataTables_info, .dataTables_length, .dataTables_filter{
+.dataTables_paginate, .dataTables_info, .dataTables_length, .dataTables_filter, tfoot{
   display:none;
 }
 
 
 /*twitter api*/
 .twitter-box{
-  background-color:#99badd;
-  border:1px solid #99badd;
-  max-width:200px;
-  height:950px;
-  overflow:hidden;
+  background-color:#F6F6F6;
+  /*border:1px solid #99badd;*/
+  width:inherit;
+  height:700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-@media (max-width:760px){
-  .twitter-box{
-    max-width:760px;
-    margin-left:30px;
-    margin-right:30px;
-    margin-bottom:10px;
-  }
-  .twit-tweet{
-    font-size:15pt;
-  }
 
-}
 .twitter-title{
   text-align:left;
   color:black;
   text-decoration:none;
-  font-family:Oswald;
-  font-size:15pt;
+  font-family:'Gotham-Medium', 'Montserrat-Bold', 'sans-serif';
+  font-size:20pt;
 }
 .twitter-title:hover{
-  color:#86665E;
-  font-size:17pt;
+  color:#211F67;
   text-decoration:underline;
 }
 
@@ -223,26 +234,27 @@ hr{
   vertical-align:center;
 }
 .twit-img{
-  width:150px;
+  width:100%;
 }
 .twit-tweet{
-  font-family:Amiri;
+  font-family:'Georgia', 'serif';
   font-size:10pt;
 }
 .screen-name{
   margin-bottom:5px;
-  font-family:Oswald;
+  font-family:'Gotham-Medium', 'Montserrat-Bold', 'sans-serif';
 }
 
 /*instagram api*/
 #insta-box{
   margin-bottom:30px;
+  margin-left:3vw;
 }
-@media (max-width:700px){
+/*@media (max-width:700px){
   #insta-box{
   margin-bottom:30px;
 }
-}
+}*/
 
 .insta-img{
 	margin:20px 30px 20px 0px;
@@ -277,6 +289,21 @@ hr{
   padding-right:50px;
   padding-left:15px;
   vertical-align:text-bottom;
+}
+
+/*map*/
+
+#map-canvas{
+  width:500px;
+  height:50%;
+}
+
+@media (max-width:575px){
+  #map-canvas{
+    width:90vw;
+    height:50%;
+    margin:0 2vw 0 1vw;
+  }
 }
 
 /*standard styles*/
@@ -320,51 +347,73 @@ body{
 }
 
 @media (min-width:992px){
-  .m-name, .m-party, .m-age, .t-name, .t-party, .t-age, .t-name{
+  .m-name, .m-party, .m-age, .t-title{
     margin-left:25px;
   }
 }
 
-@media (min-width:405px) and (max-width:760px){
-  .m-picwid{
-    height:250px;
-  }
-  .m-name, .m-party, .m-age{
-    margin-left:90px;
+@media (min-width:772px) and (max-width:991px){
+  .t-title{
+    margin-left:25px;
   }
 }
 
-@media (min-width:500px) and (max-width:800px){
-  /*.m-picwid{
+@media (min-width:405px) and (max-width:814px){
+  .m-picwid{
     height:150px;
-  }*/
+  }
+  .m-name, .m-party, .m-age{
+    margin-left:45px;
+  }
+  .t-title{
+    margin-left:40px;
+  }
+}
+
+
+/*@media (min-width:500px) and (max-width:800px){
+
   .m-name, .m-party, .m-age{
     margin-left:30px;
   }
-}
+  .t-title{
+    margin-left:50px;
+  }
+}*/
 
 @media (min-width:815px) and (max-width:986px){
   /*.m-picwid{
     height:300px;
   }*/
-  .m-name, .m-party, .m-age{
+  .m-name, .m-party, .m-age, .t-title{
     margin-left:25px;
   }
 }
 
-@media (min-width:575px) and (max-width:760px){
+/*@media (min-width:575px) and (max-width:760px){
   .t-picwid{
     height:200px;
   }
-  .t-name, .t-party, .t-age{
+  .t-title{
     margin-left:10px;
   }
-}
-@media (min-width:770px) and (max-width:992px){
-  .t-name, .t-party, .t-age{
+}*/
+@media (max-width:575px){
+  .t-title{
     margin-left:25px;
   }
+  .twitter-box, .m-questions #accordion1, #accordion3{
+    margin:0;
+  }
+  .twitter-box{
+    width:inherit;
+    margin-bottom:20px;
+  }
+  .ui-accordion-header{
+    width:inherit;
+  }
 }
+
 
 
 /*embed responsively*/
