@@ -633,11 +633,52 @@
 
 <div class="container-fluid max-width" id="vote">
   <div class="col-lg-8 col-md-8 col-sm-12">
-    <div id="map-canvas"></div>
+    <div id="map-canvas" style="width:60vw;60%;"></div>
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-12" id="hours">
-    <p>hours</p>
+    <table id="hours-table" class="display" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Date</th>
+          <th>Times</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>10/22</td>
+          <td>Thursday</td>
+          <td>12 PM - 7 PM</td>
+        </tr>
+        <tr>
+          <td>10/23</td>
+          <td>Friday</td>
+          <td>12 PM - 6 PM</td>
+        </tr>
+        <tr>
+          <td>10/24</td>
+          <td>Saturday</td>
+          <td>9 AM - 1 PM</td>
+        </tr>
+        <tr>
+          <td>10/26 - 10/29</td>
+          <td>Mon - Thurs</td>
+          <td>12 PM - 7 PM</td>
+        </tr>
+        <tr>
+          <td>10/30</td>
+          <td>Friday</td>
+          <td>12 PM - 6 PM</td>
+        </tr>
+        <tr>
+          <td>10/31</td>
+          <td>Saturday</td>
+          <td>9 AM - 1 PM</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
 
@@ -656,6 +697,7 @@
 $('a').smoothScroll();
 $(document).ready(function() {
     $('#funds-table').DataTable();
+    $('#hours-table').DataTable();
 } );
 </script>
 

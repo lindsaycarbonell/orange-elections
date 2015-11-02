@@ -12,7 +12,7 @@ function initMap(){
       //basic map options
       var mapOptions = {
         center: center,
-        zoom: 11,
+        zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
 
@@ -66,10 +66,10 @@ function initMap(){
         directionsDisplay.setMap(map);
 
         //popup box content
-        var BOEString = '<div id="contentStart"><div><b>644 Lake Hogan Lane</b><p class="inline"></p></div></div>';
-        var TownString = '<div id="contentStart"><div><b>Driving around the neighborhood</b><p class="inline"></p></div></div>';
-        var ChapelString = '<div id="contentStart"><div><b>Pool</b><p class="inline"></p></div></div>';
-        var SeymourString = '<div id="contentStart"><div><b>Greenway</b><p class="inline"></p></div></div>';
+        var BOEString = '<div id="contentStart"><div><b>Orange County Board of Elections</b><p class="inline"></p></div></div>';
+        var TownString = '<div id="contentStart"><div><b>Carrboro Town Council</b><p class="inline"></p></div></div>';
+        var ChapelString = '<div id="contentStart"><div><b>Chapel of the Cross</b><p class="inline"></p></div></div>';
+        var SeymourString = '<div id="contentStart"><div><b>Seymour Senior Center</b><p class="inline"></p></div></div>';
 
         //listeners to open boxes when icons are clicked
         google.maps.event.addListener(BOEMarker, 'click', function() {

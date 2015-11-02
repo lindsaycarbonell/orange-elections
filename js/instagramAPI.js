@@ -12,7 +12,7 @@ $(function() {
 			success: parseData
 		});
 
-
+html += "<h3>Pictures from the Orange County BOE:</h3>";
 
 		function parseData(json){
 			// console.log(json);
